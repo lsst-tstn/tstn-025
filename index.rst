@@ -1,57 +1,22 @@
-..
-  Technote content.
-
-  See https://developer.lsst.io/restructuredtext/style.html
-  for a guide to reStructuredText writing.
-
-  Do not put the title, authors or other metadata in this document;
-  those are automatically added.
-
-  Use the following syntax for sections:
-
-  Sections
-  ========
-
-  and
-
-  Subsections
-  -----------
-
-  and
-
-  Subsubsections
-  ^^^^^^^^^^^^^^
-
-  To add images, add the image file (png, svg or jpeg preferred) to the
-  _static/ directory. The reST syntax for adding the image is
-
-  .. figure:: /_static/filename.ext
-     :name: fig-label
-
-     Caption text.
-
-   Run: ``make html`` and ``open _build/html/index.html`` to preview your work.
-   See the README at https://github.com/lsst-sqre/lsst-technote-bootstrap or
-   this repo's README for more info.
-
-   Feel free to delete this instructional comment.
-
 :tocdepth: 1
-
-.. Please do not modify tocdepth; will be fixed when a new Sphinx theme is shipped.
 
 .. sectnum::
 
-.. TODO: Delete the note below before merging new content to the master branch.
-
 .. note::
-
-   **This technote is not yet published.**
 
    As new release of the control system software are available, a standardized set of tests should be run in order to provided a minimum confidence level for system functionality. This document will outline the required tests to accomplish this goal.
 
-.. Add content here.
-.. Do not include the document title (it's automatically added from metadata.yaml).
+Introduction
+============
+
+To ensure the best result when deploying new versions of the control system to the summit, the new version should be run through a set of tests on a dedicated test stand.
+The list of tests should exercise as many aspects of the operation system as possible to ensure best coverage.
+However, the test stands are limited by not having hardware backing on many of the systems.
+This implies that there WILL be gaps in coverage and the same operational interactions may still fail when the new version is deployed to the summit.
+Since we cannot have a second copy of the Rubin Observatory, we must accept this drawback as a risk for upgrading.
+There are plans for having a test stand with the capability of more hardware simulators, but that is a work in progress.
+However, that expansion of hardware simulators still will not cover all necessary systems.
+The project does have a hardware backed simulator for the LATISS and ComCam camera systems and this is currently deployed at the NCSA test stand (NTS).
 
 .. .. rubric:: References
 
