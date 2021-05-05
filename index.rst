@@ -33,6 +33,7 @@ that LOVE can run.
 How to use LOVE and nublado are covered in other documentation.
 The use of LOVE assumes that the *ScriptQueue*\ s are already ``ENABLED`` for operating.
 Future work will be to employ a system where scripts can be delivered to the *ScriptQueue*\  to automate the test running process.
+The scripts referenced below are part of the `ts_standardscripts <https://github.com/lsst-ts/ts_standardscripts>`_ package.
 
 .. _Enabled_Test:
 
@@ -145,7 +146,7 @@ This test can either be done with the system in ``ENABLED`` or ``STANDBY``\ .
 The test can only be accomplished by running the ``set_summary_state.py`` script with all component states set to ``OFFLINE``\ .
 The *Watcher* and *ScriptQueue*\ s should be done last.
 Once all components are verified to be ``OFFLINE``, the entire system needs to be turned off and restarted.
-The procedure for turning off the different subsystems is not covered in this document.
+The procedure for turning off the different subsystems is `available <https://confluence.lsstcorp.org/pages/viewpage.action?pageId=151851736>`_.
 Once the entire systems have been restarted, the :ref:`Enabled_Test` should be run again.
 
 .. rubric:: References
